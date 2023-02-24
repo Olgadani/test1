@@ -23,12 +23,4 @@ public class UserTest {
         Assertions.assertEquals("Vasya Vasya123@mail.com", actualResult);
     }
 
-    @Test
-    @DisplayName("When not equals login and email")
-    public void notEqualsLoginEmailTest() {
-        User user = new User("Vasya", "Vasya123@mail.com");
-        String actualResult = user.getLogin() + " " + user.getEmail();
-        Assertions.assertNotNull(actualResult);
-        Assertions.assertNotEquals("Vasya Vasya123@mail.com", actualResult);
-    }
 }
